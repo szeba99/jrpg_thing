@@ -1,0 +1,27 @@
+<!DOCTYPE html><html>
+<head>
+    <link rel="stylesheet" href="overworld.css">
+</head>
+
+<body>
+    <div id="TheIntro"><input type="button" value="START" onclick="StartGame()"></div>
+    <div id="TheMap" hidden>a</div>
+    <div id="TheBattle" hidden></div>
+    <audio autoplay id="musicc" controls loop hidden>
+        <source src="music/overworld.mp3" type="audio/mpeg">
+      </audio>
+</body>
+<script src="enemies.js"></script>
+<script src="overworld.js"></script>
+<script src="player.js"></script>
+</html>
+
+<script>
+    function StartGame()
+    {
+        musicc.play();
+        document.getElementById("TheIntro").hidden = true;
+        document.getElementById("TheMap").hidden = false;
+        document.getElementById("musicc").hidden = false;
+    }
+</script>

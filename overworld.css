@@ -1,0 +1,62 @@
+body
+{
+    background-color: black;
+}
+
+#player
+{
+    background-image:url("sprites/player.png");
+    width:64px;
+    height:64px;
+}
+#grass
+{
+    background-image:url("textures/grass.png");
+    width:64px;
+    height:64px;
+    float:left;
+}
+
+#dirt
+{
+    background-image:url("textures/dirt.png");
+    width:64px;
+    height:64px;
+    float:left;
+}
+
+
+#trees
+{
+    background-image:url("textures/trees.png");
+    width:64px;
+    height:64px;
+    float:left;
+}
+
+
+#water
+{
+    background-image:url("textures/water1.png");
+    animation:wateranim 1s alternate infinite;
+    width:64px;
+    height:64px;
+    float:left;
+}
+
+@keyframes wateranim
+{
+    from
+    {
+        background-image:url("textures/water1.png");
+    }
+    to
+    {
+        background-image:url("textures/water2.png");
+    }
+}
+
+#line
+{
+    width:640px;
+}
