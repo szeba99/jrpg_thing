@@ -1,5 +1,5 @@
-## Welcome to GitHub Pages
+## Welcome to github pages!
 
 Try the game here [Link](https://szeba99.github.io/jrpg_thing/overworld.html)
 
-**Bold** and _Italic_ and `Code` text
+Controls: Click next to the player character to move.
