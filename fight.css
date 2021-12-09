@@ -1,0 +1,13 @@
+#fightbackground
+{
+    background-image:url("textures/battlescreen.png");
+    width:640px;
+    height:400px;
+}
+
+#runaway
+{
+    position:absolute;
+     left:500px;
+      top:380px;
+}

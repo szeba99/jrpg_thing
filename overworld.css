@@ -60,3 +60,10 @@ body
 {
     width:640px;
 }
+
+#enemy
+{
+    background-image:url("sprites/enemy.png");
+    width:64px;
+    height:64px;
+}

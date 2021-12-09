@@ -27,9 +27,21 @@ var playermapy = player.y*64;
 document.getElementById("TheMap").innerHTML += '<div id="player"></div>';
 document.getElementById('player').style=`position:absolute; left:${playermapx}px; top:${playermapy}px;`;
 
+var surroundings =
+    [
+        [player.x, player.y-1],
+        [player.x+1,player.y-1],
+        [player.x+1,player.y],
+        [player.x+1,player.y+1],
+        [player.x,player.y+1],
+        [player.x-1,player.y+1],
+        [player.x-1,player.y],
+        [player.x-1,player.y-1]
+    ];
+
 function Go(x,y)
 {
-    var surroundings =
+    surroundings =
     [
         [player.x, player.y-1],
         [player.x+1,player.y-1],
@@ -59,11 +71,23 @@ function Go(x,y)
     //check for enemy
     for (var i in enemies)
     {
-        if (enemy[i].x === player.x && enemy[i].y === player.y)
+        if (enemies[i].x === player.x && enemies[i].y === player.y)
         {
             //do something...
             //maybe start battle scene
         }
     }
-    //
+    //update surroundings
+    surroundings = [];
+    surroundings =
+    [
+        [player.x, player.y-1],
+        [player.x+1,player.y-1],
+        [player.x+1,player.y],
+        [player.x+1,player.y+1],
+        [player.x,player.y+1],
+        [player.x-1,player.y+1],
+        [player.x-1,player.y],
+        [player.x-1,player.y-1]
+    ];
 }
